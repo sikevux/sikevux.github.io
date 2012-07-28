@@ -17,6 +17,9 @@ author :
   github : sikevux
 #  twitter : username
 #  feedburner : feedname
+	statusnet:
+		instance: freesocial.org
+		user: sikevux
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
