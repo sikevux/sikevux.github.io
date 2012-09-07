@@ -10,3 +10,5 @@ My name is Sikevux, but I'm also known as Patrik Greco. Oh and plix call me Grec
 And my girlfriend is awesome, just fyi.
 
 
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}
