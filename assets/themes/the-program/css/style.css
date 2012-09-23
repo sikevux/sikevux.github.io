@@ -137,6 +137,8 @@ samp {
 }
 /* Improve readability of pre-formatted text in all browsers */
 pre {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
