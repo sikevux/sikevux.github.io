@@ -34,9 +34,26 @@
 					</div><!-- meta -->
 				</div><!-- entry-content -->
 				<div class="misc-content">
-					<div class="comment">
-					{% include JB/comments %}
-					</div>
+        <div class="comment">
+            <div id="talkatv-comments"></div>
+            <script>
+                var talkatv_home = 'http://talka.tv';
+                // use /talkatv.js instead of /static/js...
+                var talkatv_shortcut = true;
+
+                document.write(unescape('%3Cscript src="'
+                + talkatv_home + (window.talkatv_shortcut
+                ? '/talkatv.js' : '/static/js/talkatv.js')
+                + '" type="text/javascript"%3E%3C/script%3E'));
+            </script>
+            <noscript>
+                <p>
+                    You don't seem to have JavaScript enabled!
+                    Head over to <a href="http://talka.tv/comment/list/?url={{ site.base_url }}{{ page.url }}">
+                    the static comment page</a> to read and post comments.
+                </p>
+            </noscript>
+        </div>
 				</div><!-- misc-content -->
 			</div><!-- bd -->
 			<footer class="unit-foot">
