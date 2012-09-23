@@ -3,7 +3,6 @@ layout: post
 title: "Hello World"
 description: "Because blaging can't die-ish"
 category: Junk
-tags: []
 ---
 {% include JB/setup %}
 
