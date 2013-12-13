@@ -1,20 +1,34 @@
----
-layout: page
-title: Hai thar!
-tagline: Shit and stuff
----
-{% include JB/setup %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title data-basepath="~sikevux">~sikevux/</title>
 
-Err... this is my blag. I don't think before I write stuff.
-My name is Sikevux, but I'm also known as Patrik Greco. Oh and plix call me Greco or Sikevux. Mkay?
-And my girlfriend is awesome, just fyi.
+		<link rel="stylesheet" href="style.css" type="text/css" />
 
-Now go read the posts.
+		<meta name="description" content="This is a personal presentation and contact card page." />
+		<meta name="keywords" content="Contact,Contact card,Personal,Presentation" />
+		<meta name="author" content="Patrik Greco" />
 
-<hr>
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<a href="index.html"><span class="path" data-basepath="~sikevux">~sikevux/</span><span class="block">&#x2588;</span></a>
+			</header>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">~sikevux/</a></li>
+					<li><a href="work.html">./work/</a></li>
+					<li><a href="about.html">./about/</a></li>
+				</ul>
+			</nav>
+				<h2>~sikevux/</h2>
+				<p>I do have a presence on places like IRC, GitHub, LinkedIn. See in the Contact Section under ./about/ so far.</p>
+			<footer>
+				Originally made by <a href="http://elis.nu/index.html#about">~elis/</a>, heavily modified by <a href="about.html">~sikevux/</a>
+			</footer>
+		</div>
+	</body>
+</html>
